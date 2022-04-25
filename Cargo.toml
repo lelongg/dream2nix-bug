@@ -1,0 +1,12 @@
+[package]
+authors = ["Gérald Lelong <gerald.lelong@easymov.fr>"]
+edition = "2021"
+name = "dream2nix-bug"
+version = "0.1.0"
+
+[[bin]]
+name = 'dream2nix-bug'
+path = 'src/main.rs'
+
+[dependencies]
+chrono = { version = "0.4.19", features = ["serde"] }
