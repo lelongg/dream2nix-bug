@@ -51,17 +51,17 @@
         "pre-commit-hooks": "pre-commit-hooks"
       },
       "locked": {
-        "lastModified": 1650924659,
-        "narHash": "sha256-tWF0/yM+5yB5NSvc3NXAhkya4KSswKczzrTkFR6DucY=",
-        "owner": "nix-community",
+        "lastModified": 1651007239,
+        "narHash": "sha256-KO/XxkVIlzN5yUfClWPVJx6FW2h8KSCZ88Wy4i1XhQE=",
+        "owner": "yusdacra",
         "repo": "dream2nix",
-        "rev": "c93972bd52977de332812fcc97ff77f8b85bcf42",
+        "rev": "6d2a50459c51e4ffef5a3ce9165f9c682cd8fd22",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
+        "owner": "yusdacra",
         "repo": "dream2nix",
-        "rev": "c93972bd52977de332812fcc97ff77f8b85bcf42",
+        "rev": "6d2a50459c51e4ffef5a3ce9165f9c682cd8fd22",
         "type": "github"
       }
     },
@@ -142,6 +142,22 @@
         "type": "indirect"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1645296114,
+        "narHash": "sha256-y53N7TyIkXsjMpOG7RhvqJFGDacLs9HlyHeSTBioqYU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "530a53dcbc9437363471167a5e4762c5fcfa34a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "release-21.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "node2nix": {
       "flake": false,
       "locked": {
@@ -202,7 +218,8 @@
     },
     "root": {
       "inputs": {
-        "dream2nix": "dream2nix"
+        "dream2nix": "dream2nix",
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
