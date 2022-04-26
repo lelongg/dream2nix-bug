@@ -1,0 +1,18 @@
+[package]
+edition = "2018"
+name = "ws_stream"
+version = "0.1.0"
+
+[lib]
+name = "ws_stream"
+path = "src/lib.rs"
+
+[dependencies]
+actix-http = "3.0.0-beta.5"
+actix-web = "=4.0.0-beta.5"
+actix-web-actors = "4.0.0-beta.3"
+bytes = "1.0.1"
+futures = "0.3.7"
+pin-project-lite = "0.2.8"
+tokio-util = { version = "0.6.5", features = ["codec", "compat"] }
+tungstenite = "0.13.0"

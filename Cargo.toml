@@ -1,12 +1,13 @@
-[package]
-authors = ["Gérald Lelong <gerald.lelong@easymov.fr>"]
-edition = "2021"
-name = "dream2nix-bug"
-version = "0.1.0"
+[workspace]
 
-[[bin]]
-name = 'dream2nix-bug'
-path = 'src/main.rs'
+members = ["src/backend/config_path", "src/backend/ws_stream"]
 
-[dependencies]
-chrono = { version = "0.4.19", features = ["serde"] }
+[profile.dev]
+debug = 1
+incremental = true
+lto = false
+
+[profile.release]
+debug = 1
+incremental = true
+lto = false
